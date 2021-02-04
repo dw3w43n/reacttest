@@ -1,21 +1,17 @@
-// import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Profile from "./components/Profile";
 
 const App = () => {
   return (
-    <div>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contacts</li>
-      </ul>
-      Simple HTML
-      <div className="out">
-        <div className="inner">
-          <div className="center"></div>
-        </div>
-      </div>
+    <div className="app-wrapper">
+      <Header />
+      <Nav />
+      <Profile />
     </div>
   );
 };
+
 export default App;
