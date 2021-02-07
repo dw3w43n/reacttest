@@ -1,0 +1,16 @@
+.nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  background-color: #11aa89;
+}
+
+.nav a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.nav.active a {
+  color: #ffd700;
+}
