@@ -10,5 +10,12 @@
   margin: 0 auto;
   grid-template-areas:
     "header header"
-    "nav profile";
+    "nav content";
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
+  background-color: #7ab472;
 }

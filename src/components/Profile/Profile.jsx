@@ -4,12 +4,11 @@ import classes from "./Profile.module.css";
 
 const Profile = () => {
   return (
-    <div className={classes.profile}>
+    <div>
       <div>
         <img
           className={classes.content__bg}
           src="./images/contentbackground.jpg"
-          alt=""
         />
       </div>
       <MyPosts />
