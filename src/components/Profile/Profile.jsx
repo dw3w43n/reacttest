@@ -9,6 +9,7 @@ const Profile = () => {
         <img
           className={classes.content__bg}
           src="./images/contentbackground.jpg"
+          alt=""
         />
       </div>
       <MyPosts />

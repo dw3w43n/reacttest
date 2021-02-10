@@ -2,15 +2,20 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
+  padding: 20px;
   background-color: #11aa89;
 }
 
-.nav a {
+.item {
+  margin-top: 10px;
+}
+
+.item a {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
 }
 
-.nav.active a {
+a.activeLink {
   color: #ffd700;
 }
