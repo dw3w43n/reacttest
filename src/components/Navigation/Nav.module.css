@@ -11,9 +11,20 @@
 }
 
 .item a {
+  font-size: 16px;
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.item a:hover {
+  font-size: 15px;
+  color: #ffd700;
+}
+
+.item a:active {
+  font-size: 14px;
 }
 
 a.activeLink {
