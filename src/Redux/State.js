@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../rander";
+
 let state = {
   profilePage: {
     posts: [
@@ -8,6 +10,7 @@ let state = {
       { id: 5, message: "Post 5", likesCount: 51 },
       { id: 6, message: "Post 6", likesCount: 154 },
     ],
+    newPostText: "Hello world",
   },
 
   dialogsPage: {
@@ -24,6 +27,24 @@ let state = {
       { id: 3, message: "Ex asperiores voluptatem ut aut sit maxime." },
     ],
   },
+};
+
+window.state = state;
+
+export const addPost = () => {
+  let newPost = {
+    id: 5,
+    message: state.profilePage.newPostText,
+    likesCount: 0,
+  };
+  state.profilePage.posts.push(newPost);
+  state.profilePage.newPostText = "";
+  rerenderEntireTree(state);
+};
+
+export const updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
+  rerenderEntireTree(state);
 };
 
 export default state;
