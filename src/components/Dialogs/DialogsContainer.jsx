@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { connect } from "react-redux";
 import {
   sendMessageCreator,
@@ -13,10 +13,10 @@ let mapStateToProps = (state) => {
 };
 let mapDispatchToProps = (dispatch) => {
   return {
-    updateNewMessageBody: () => {
+    sendMessage: () => {
       dispatch(sendMessageCreator());
     },
-    sendMessage: (body) => {
+    updateNewMessageBody: (body) => {
       dispatch(updateNewMessageBodyCreator(body));
     },
   };
