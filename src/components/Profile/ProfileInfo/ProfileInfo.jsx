@@ -7,7 +7,7 @@ const ProfileInfo = () => {
       <div>
         <img
           className={classes.content__bg}
-          src="./images/contentbackground.jpg"
+          src="ccontentbackground.jpg"
           alt=""
         />
       </div>
