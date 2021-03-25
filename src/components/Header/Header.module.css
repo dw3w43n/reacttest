@@ -6,9 +6,20 @@
   background-color: #11aa89;
   border-radius: 5px;
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: relative;
 }
 
 .header img {
   padding: 5px;
   width: 50px;
+}
+
+.loginBlock {
+  position: absolute;
+  right: 20px;
+}
+.loginBlock a {
+  color: white;
+  text-decoration: none;
 }
