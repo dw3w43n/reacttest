@@ -4,15 +4,11 @@ import {
   follow,
   unfollow,
   setCurrentPage,
-  setUsers,
-  setUsersTotalCount,
-  toggleIsFetching,
   toggleFollowingProgress,
   getUsers,
 } from "../../Redux/usersReducer";
 import Users from "./Users";
 import Preloader from "../common/Preloader";
-import { usersAPI } from "../../api/api";
 
 class UsersContainer extends React.Component {
   componentDidMount() {
